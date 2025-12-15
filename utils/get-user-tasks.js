@@ -9,7 +9,7 @@ const getUserTasks = async (dispatch) => {
 		} = window.Telegram.WebApp;
 
 		const response = await fetch(
-			"https://ankr-airdrop-server.onrender.com/api/user/tasks",
+			"https://ankr-airdrop-server-e0tq.onrender.com/api/user/tasks",
 			// "http://localhost:3000/api/user/tasks",
 			{
 				headers: {

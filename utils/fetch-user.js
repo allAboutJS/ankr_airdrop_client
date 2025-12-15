@@ -10,7 +10,7 @@ const fetchUser = async (dispatch) => {
 
 		try {
 			const response = await fetch(
-				"https://ankr-airdrop-server.onrender.com/api/user/",
+				"https://ankr-airdrop-server-e0tq.onrender.com/api/user/",
 				// "http://localhost:3000/api/user/",
 				{
 					headers: {

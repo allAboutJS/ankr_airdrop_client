@@ -9,7 +9,7 @@ const getReferees = async (dispatch) => {
 		} = window.Telegram.WebApp;
 
 		const response = await fetch(
-			"https://ankr-airdrop-server.onrender.com/api/user/referees",
+			"https://ankr-airdrop-server-e0tq.onrender.com/api/user/referees",
 			// "http://localhost:3000/api/user/referees",
 			{
 				headers: {
