@@ -1,12 +1,11 @@
 import { useContext, useState } from "react";
 import { AppCtx } from "../../App";
-import {
-	CompletedTasksUi,
-	PendingTasksUi,
-} from "../../components/tasks-optimstic-ui";
-import { Link } from "react-router-dom";
 import TaskIcon from "../../components/task-icon";
 import TaskLink from "../../components/task-link";
+import {
+    CompletedTasksUi,
+    PendingTasksUi,
+} from "../../components/tasks-optimstic-ui";
 
 const TasksPage = () => {
 	const { state, dispatch } = useContext(AppCtx);
@@ -110,7 +109,7 @@ const TasksPage = () => {
 													</div>
 													<TaskLink
 														dispatch={dispatch}
-														id={task.id}
+														id={task._id}
 														link={task.link}
 														userId={user.id}
 													/>

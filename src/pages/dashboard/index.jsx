@@ -2,12 +2,11 @@ import { useContext } from "react";
 import { BiUser } from "react-icons/bi";
 import { FaTasks } from "react-icons/fa";
 import { FaUsers } from "react-icons/fa6";
-import { Link } from "react-router-dom";
+import getReferralMessage from "../../../utils/get-referral-message";
 import { AppCtx } from "../../App";
 import TaskIcon from "../../components/task-icon";
 import TaskLink from "../../components/task-link";
 import { PendingTasksUi } from "../../components/tasks-optimstic-ui";
-import getReferralMessage from "../../../utils/get-referral-message";
 
 const Dashboard = () => {
 	const { state, dispatch } = useContext(AppCtx);
@@ -147,7 +146,7 @@ const Dashboard = () => {
 											</div>
 											<TaskLink
 												dispatch={dispatch}
-												id={task.id}
+												id={task._id}
 												link={task.link}
 												userId={user.id}
 											/>

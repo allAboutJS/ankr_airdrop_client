@@ -4,7 +4,7 @@ const sortTasks = (state, dispatch) => {
 	if (tasks && userTasks && (!pendingTasks || !dailyTasks)) {
 		const sortedPendingTasks = tasks.filter(task => {
 			const isTaskDone = userTasks.find(
-				userTask => userTask.taskId === task.id
+				userTask => userTask.taskId === task._id
 			);
 
 			return isTaskDone ? false : true;
