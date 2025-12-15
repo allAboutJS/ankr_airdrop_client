@@ -1,10 +1,10 @@
 import { useContext } from "react";
 import { BiCopy } from "react-icons/bi";
 import { FaUsers } from "react-icons/fa";
-import { AppCtx } from "../../App";
-import PendingReferralsUi from "../../components/referrals-optimistic-ui";
 import getReferralMessage from "../../../utils/get-referral-message";
 import toast from "../../../utils/toast";
+import { AppCtx } from "../../App";
+import PendingReferralsUi from "../../components/referrals-optimistic-ui";
 
 const ReferralsPage = () => {
 	const { state } = useContext(AppCtx);
@@ -12,7 +12,7 @@ const ReferralsPage = () => {
 	const copyLink = async () => {
 		try {
 			await window.navigator.clipboard.writeText(
-				`https://t.me/ankr_airdrop_bot?start=${user.referralCode}`,
+				`https://t.me/@the_ankr_airdrop_bot?start=${user.referralCode}`,
 			);
 
 			toast.success("Link copied!");
